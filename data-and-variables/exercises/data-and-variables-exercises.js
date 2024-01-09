@@ -21,3 +21,5 @@ console.log (typeof shuttleSpeedMph)
 console.log (typeof distanceToMarsKm)
 console.log (typeof distanceToMoonKm)
 console.log (typeof milesToKm)
+
+console.log ("test")
