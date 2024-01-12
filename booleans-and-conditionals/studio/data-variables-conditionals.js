@@ -31,24 +31,82 @@ let fuelLevel = "100%" ;
 let weatherStatus = "clear" ;
 let preparedForLiftOff = true ;
 
-if (astronautCount <= 7)  {
-    console.log("All crew Counted.");
+
+if (astronautCount < 7) {
+
+}
+else {
+    let preparedForLiftOff =false ;
 }
     if (astronautStatus === "ready") {
-        console.log ("All crew Prepared.") ;
+
+    }
+    else {
+        preparedForLiftOff =false ;
     }
         if (totalMassKg < 85000) {
-            console.log ("Weight level stable.") ;
-        }
-        if (fuelTempCelsius > -300 && fuelTempCelsius < -150) {
-                console.log("fuel temperature safe.") ;
-            }
-            if (fuelLevel === "100%") {
-                    console.log("Temperature safe.") ;
-                }
-                if (weatherStatus === "clear")  {
-                    console.log ("shuttle ready for launch!") 
-                    }
-                    else console.log ("Error in launch! Check Weight, Fuel, and Weather.") ;
 
-                        
+        }
+        else {
+            preparedForLiftOff =false ;
+        }
+            if (fuelTempCelsius > -300 && fuelTempCelsius <-150) {
+
+            }
+            else {
+                preparedForLiftOff =false ;
+            }
+                if (fuelLevel === "100%") {
+
+                }
+                else {
+                    preparedForLiftOff =false ;
+                }
+
+                    if (weatherStatus === "clear") {
+                
+                    }
+                        else {
+                            preparedForLiftOff =false ;
+                        }
+if (preparedForLiftOff = true) {
+console.log ("-------------------------------------------");
+console.log ("Date:" + date);
+console.log ("Time:" + time);
+console.log ("Astronaut Count:" + astronautCount);
+console.log ("Crew Mass:" + crewMassKg);
+console.log ("Fuel Mass:" + fuelMassKg + "kg");
+console.log ("Total Mass:" +totalMassKg + "kg");
+console.log ("Fuel Temperature:" + fuelTempCelsius + "C");
+console.log ("Weather Status:" + weatherStatus );
+console.log ("-------------------------------------------")
+}
+    else {
+        console.log("Error Launch aborted.")
+    }
+
+
+//
+// if (astronautCount <= 7)  {
+//     console.log("All crew Counted.");
+// }
+//     if (astronautStatus === "ready") {
+//         console.log ("All crew Prepared.") ;
+//     }
+//         if (totalMassKg < 85000) {
+//             console.log ("Weight level stable.") ;
+//         }
+//         if (fuelTempCelsius > -300 && fuelTempCelsius < -150) {
+//                 console.log("fuel temperature safe.") ;
+//             }
+//             if (fuelLevel === "100%") {
+//                     console.log("Temperature safe.") ;
+//                 }
+//                 if (weatherStatus === "clear")  {
+//                     console.log ("shuttle ready for launch!") 
+//                     }
+//                     else console.log ("Error in launch! Check Weight, Fuel, and Weather.") ;
+
+//  if (astronautCount >= 7) {
+//     console.log ("Error: crew has not been fully accounted for!")
+//  }                       
