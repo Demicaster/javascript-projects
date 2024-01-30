@@ -1,6 +1,9 @@
 //We want to COMPLETELY reverse an array by flipping the order of the entries AND flipping the order of characters in each element.
 
 // Part One: Reverse Characters
+function reverseCharacters(stringToReverse){
+    return stringToReverse.split('').reverse().join('')
+}
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
 // 2. Within the function, split the string into an array, then reverse the array.
@@ -8,9 +11,17 @@
 // 4. Below the function, define and initialize a variable to hold a string.
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
+let reversedString = 1234;
 
 // Part Two: Reverse Digits
+if (typeof reversedString == String) {
+    reverseCharacters
+}
+    else {
+        reverseCharacters.toString
+    }
 
+    console.log(reverseCharacters(reversedString))
 // 1. Add an if statement to reverseCharacters to check the typeof the parameter.
 // 2. If typeof is ‘string’, return the reversed string as before.
 // 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
