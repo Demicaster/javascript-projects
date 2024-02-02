@@ -1,14 +1,18 @@
 // Code your orbitCircumference function here:
+function orbitCircumference(radius){
 
+return Math.round(2 * Math.PI * radius);
+}
+console.log(orbitCircumference(100))
 
 // Code your missionDuration function here:
+function missionDuration (numOrbits, o)
 
 
 // Copy/paste your selectRandomEntry function here:
 
 
 // Code your oxygenExpended function here:
-
 
 // Candidate data & crew array.
 let candidateA = {
